@@ -1,0 +1,5 @@
+selenium
+pytest==7.3.1
+selenium-page-factory
+pytest-html
+pytest-xdist
