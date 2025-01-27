@@ -1,14 +1,4 @@
-from config.common_imports import *
-from config.env_settings import BASE_URL
 from pages.basic_auth_page import BasicAuthPage
-
-
-@pytest.fixture(scope="module")
-def driver():
-    option = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(options=option)
-    yield driver
-    driver.quit()
 
 
 def test_basic_auth_valid(driver):
