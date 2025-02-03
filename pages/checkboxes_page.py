@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from seleniumpagefactory.Pagefactory import PageFactory
 
 
-class Checkboxes(PageFactory):
+class Checkboxes:
     def __init__(self, driver):
         self.driver = driver
         self.checkboxes = (By.XPATH, "//input[@type='checkbox']")

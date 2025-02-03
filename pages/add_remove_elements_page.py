@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from seleniumpagefactory.Pagefactory import PageFactory
 
 
-class AddRemoveElementsPage(PageFactory):
+class AddRemoveElementsPage:
     def __init__(self, driver):
         self.driver = driver
         self.add_button = (By.XPATH, "//button[@onclick='addElement()']")

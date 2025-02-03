@@ -2,7 +2,7 @@ from pages.add_remove_elements_page import AddRemoveElementsPage
 from pages.home_page import HomePage
 
 
-def test_add_remove_elements(driver):
+def test_add_element(driver):
     home_page = HomePage(driver)
     add_remove_elements_page = AddRemoveElementsPage(driver)
     home_page.click_page("Add/Remove Elements")
@@ -11,6 +11,10 @@ def test_add_remove_elements(driver):
     add_remove_elements_page.click_add_element()
     delete_buttons = add_remove_elements_page.get_delete_buttons()
     assert len(delete_buttons) > 0
+
+
+def test_delete_element(driver):
+    add_remove_elements_page = AddRemoveElementsPage(driver)
 
     # Verify if button "Delete" removes "Delete" button
     add_remove_elements_page.click_delete_button()

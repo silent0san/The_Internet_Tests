@@ -1,11 +1,10 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from seleniumpagefactory.Pagefactory import PageFactory
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class ContextMenu(PageFactory):
+class ContextMenu:
     def __init__(self, driver):
         self.driver = driver
         self.context_menu = (By.ID, "hot-spot")
