@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from seleniumpagefactory.Pagefactory import PageFactory
 
 
-class BrokenImagesPage(PageFactory):
+class BrokenImagesPage:
     def __init__(self, driver):
         self.driver = driver
         self.images = (By.TAG_NAME, "img")

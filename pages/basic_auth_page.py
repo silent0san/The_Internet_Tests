@@ -1,9 +1,8 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-from seleniumpagefactory.Pagefactory import PageFactory
 
 
-class BasicAuthPage(PageFactory):
+class BasicAuthPage:
     def __init__(self, driver):
         self.driver = driver
         self.answer_div = (By.CSS_SELECTOR, "div.example")
