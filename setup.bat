@@ -9,6 +9,9 @@ source venv/bin/activate
 echo "Installing dependencies"
 pip install -r requirements.txt
 
+echo "Saving installed dependencies"
+pip freeze > requirements.txt
+
 echo "Setup complete. Virtual environment is ready to use"
 
 echo "Running tests"

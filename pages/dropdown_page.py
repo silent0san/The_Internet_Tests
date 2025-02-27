@@ -15,9 +15,6 @@ class Dropdown:
         return len(select.options)
 
     def select_by_index(self, index):
-        return self.dropdown_menu.select_by_index(index)
-
-    def select_by_index(self, index):
         select = Select(self.get_dropdown_menu())
         select.select_by_index(index)
 
