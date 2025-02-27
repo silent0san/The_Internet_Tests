@@ -11,6 +11,7 @@ def test_total_checkboxes(driver):
     total_checkboxes = len(checkboxes_page.get_checkboxes())
     assert total_checkboxes == 2
 
+
 def test_checked_checkboxes(driver):
     checkboxes_page = Checkboxes(driver)
 
